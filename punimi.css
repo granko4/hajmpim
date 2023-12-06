@@ -1,0 +1,27 @@
+.container{
+    display:flex;
+    flex-direction: row;
+    max-width: 1220px;
+    width: 90%;
+    font-size: 3em;
+    margin: auto;
+    justify-content: space-around;
+}
+
+.hajmpim{
+    
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: baseline;
+        align-content: space-between;
+    
+}
+ktu duhet id ose heshteg ose pik{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	
+}
