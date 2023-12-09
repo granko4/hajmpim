@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOP PRODUKTET</title>
+        <style type="text/css">
+        #topushqimet
+        {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 800px;
+        margin:0 auto;
+        }
+        #topushqimet img
+        {
+        max-width: 900px;
+        height: 500px
+        ;
+        }
+        button
+        {
+        width: 100px;
+        height: 60px;
+        font: 15pt;
+        color: red;
+        font-family: 'Courier New', Courier, monospace;
+        }
+        </style>
+</head>
+<body>
+    <a href="HOMEPAGE.HTML"><img src="hajmpimlogo.png" width="400" height="100"></a>
+    <div id="topushqimet">
+<header>
+    <h1>TOP PRODUKTET ME TE PREFERUARA </h1>
+    <img name="preferuarat" id="preferuarat" />
+    </header>
+    <button onclick="ushqimitjeter()">Tjetri</button>
+    </div>
+        <script>
+        var i = 0;
+        var imgArray = [
+        "7jpg.jpg",
+        "8jpg.jpg",
+        "9jpg.jpg",
+        "10jpg.jpg",
+        "11jpg.jpg"];
+        function ushqimitjeter() {
+        document.getElementById('preferuarat').src = imgArray[i];
+        if (i < imgArray.length - 1) {i++;} 
+        else {i = 0;
+        }
+        }
+        document.body.addEventListener('load', ndrroImg());
+        </script>
+</body>
+</html>
