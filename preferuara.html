@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TOP PRODUKTET</title>
         <style type="text/css">
+            body{
+                background-image: url("delivery1.jpg");
+                background-repeat: no-repeat;
+                height: 100%;
+                background-size: cover;
+            }
+             h1{
+                background-color: beige;
+            }
         #topushqimet
         {
         display: flex;
@@ -25,7 +34,7 @@
         width: 100px;
         height: 60px;
         font: 15pt;
-        color: red;
+        color: black;
         font-family: 'Courier New', Courier, monospace;
         }
         </style>
@@ -37,23 +46,29 @@
     <h1>TOP PRODUKTET ME TE PREFERUARA </h1>
     <img name="preferuarat" id="preferuarat" />
     </header>
-    <button onclick="ushqimitjeter()">Tjetri</button>
+    <img class="preferuarat" src="2.jpg">
+    <img class="preferuarat" src="3.jpg">
+    <img class="preferuarat" src="4.jpg">
+    <img class="preferuarat" src="5.jpg">
+    <button class="w3-button w3-display-right" onclick="plus(+1)">Ushqimi tjeter</button>
     </div>
         <script>
-        var i = 0;
-        var imgArray = [
-        "7jpg.jpg",
-        "8jpg.jpg",
-        "9jpg.jpg",
-        "10jpg.jpg",
-        "11jpg.jpg"];
-        function ushqimitjeter() {
-        document.getElementById('preferuarat').src = imgArray[i];
-        if (i < imgArray.length - 1) {i++;} 
-        else {i = 0;
+        var slideIndex = 1;
+    shfaqe(slideIndex);
+
+    function plus(n) {
+     shfaqe(slideIndex += n);
+    }
+        function shfaqe(n) {
+        var i;
+        var x = document.getElementsByClassName("preferuarat");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length} ;
+        for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+         }
+        x[slideIndex-1].style.display = "block";
         }
-        }
-        document.body.addEventListener('load', ndrroImg());
         </script>
 </body>
 </html>

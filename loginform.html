@@ -16,27 +16,39 @@
         <form action="">
             <h1>Login</h1>
             <div class="inputbox">
-                <input type="text" placeholder="Username"
-                required>
+                <input type="text" placeholder="Username"required>
             </div>
             <div class="inputbox">
-                <input type="password" placeholder="Passwordi"
-                required>
+                <input type="password" placeholder="Passwordi"required>
             </div>
             <div class="inputbox">
-                <input type="adresa" placeholder="Adresa "
-                required>
+                <input type="text" placeholder="Email"required>
             </div>
-            <div class="inputbox">
-                <input type="numri" placeholder="Numri"
-                required>
-            </div>
-            <button type="submit" class="buton">LOGIN</button>
+             <button id="buton" type="Login" onclick="validateFORM()">Login</button>
             <div class="registerlink">
                 <p>Don't have account?<a
-                href="#">Register</a></p>
+                href="registerlink.html">Register</a></p>
             </div>
         </form>
     </div>
+    <script>
+        function validateFORM() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            var email = document.getElementById("email").value;
+    
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            var isEmailValid = emailRegex.test(email);
+    
+            var errorMessageElement = document.getElementById('errorMessage');
+    
+            if (!username || !password || !isEmailValid) {
+                alert('Please fill in all fields correctly.');
+            } else {
+                alert('Login successful!');
+            }
+        }
+    </script>
+        
 </body>
 </html>

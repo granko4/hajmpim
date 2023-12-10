@@ -1,13 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 .container{
     display:flex;
     flex-direction: row;
-    max-width: 1220px;
-    width: 90%;
+    width: 100%;
     font-size: 3em;
     margin: auto;
     justify-content: space-around;
+    background-color: beige;
 }
-
+a{
+    text-decoration: none;
+}
+/* ktu nalt e kemi hek underline prej linkave */
 .hajmpim{
     
         display: flex;
@@ -16,12 +23,19 @@
         justify-content: space-between;
         align-items: baseline;
         align-content: space-between;
-    
+        background-color: gainsboro;
 }
-ktu duhet id ose heshteg ose pik{
+.hyn{
 	display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
 	justify-content: space-between;
 	
+}
+#home{
+    display: block;
+}
+.p{
+    text-align: center;
+    font-size: large;
 }

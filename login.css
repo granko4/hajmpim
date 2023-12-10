@@ -1,29 +1,39 @@
 *{
     margin: 0%;
     padding: 0%;
+
+}
+body{
+    background-image: url("wallpaper.jpg");
 }
 .img{
     display: flex;
     justify-content: center;
     align-items: baseline;
-    background-color: chocolate;
 }
-.hyn{
-    
+.hyn{   
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     background-image: url("wallpaper.jpg");
-    
 }
-.hyn h1{
-    font-size: 32px;
-    text-align: center;
+.inputbox{
+    height: 100px;
+    width: 200px;
+    background-color: azure;
+    justify-content: center;
+    font-size: large;
 }
-.hyn .buton{
-    width: 178px;
-    height: 20px;
-    background-color: antiquewhite;
-    border-top: 1px ;
+.registerform{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("wallpaper.jpg");
+}
+.main{
+    display: block;
+    justify-content: center;
+    align-items: center;
 }

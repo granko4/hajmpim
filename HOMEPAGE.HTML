@@ -6,20 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet"  href="punimi.css"/>
     <title>HAJMPIM</title>
-    
-</head>
-<body>
-    <div class="hajmpim"> 
-        <a href="HOMEPAGE.HTML"><img src="hajmpimlogo.png" width="400" height="100"></a>
-            <a href="loginform.html"><img src="login.png" width="200" height="100"></a>
-    </div>   
-        </div>
-    <div class="container">
-        <a href="Restaurantet.html"> <div class="flexbox-item" id="Restaurantet">Restaurantet</div></a>
-        <a href="Delivery.html"><div class="flexbox-item" id="Delivery">Dergesa</div></a>
-        <a href="preferuara.html"><div class="flexbox-item" id="preferuara">Ushqimet te preferuara</div></a>     
-    </div>
-    </div> 
     <style>
         .ushqimet{
             display: flex;
@@ -32,48 +18,170 @@
             flex-direction: row;
             text-align: center;
         }
+        div.item{
+            vertical-align: top;
+            display: inline-block;
+            text-align: center;
+            width: 120px;
+        }
+        img{
+            width: 100px;
+            height: 200px;
+            background-color: beige;
+        }
+        .caption{
+            display: block;
+        }
+        footer{
+            display: block;
+            text-align: center;
+            padding: 4px;
+            background-color: black;
+            color: white;
+        }
     </style>
-    <div class="ushqimet">
-    <img src="C:\Users\rebra\Desktop\FOODELIVERY\hamburger.jpg" height="400px" width="400px">
-    <p>HAMBURGERI</p>
-    <img src="C:\Users\rebra\Desktop\FOODELIVERY\pizza.jpg" height="400px" width="400px"/>
-    <p>PICA</p>
-    <img src="C:\Users\rebra\Desktop\FOODELIVERY\pasta.jpg" height="400px" width="400px"/>
-    <P>PASTA</P>
-    <img src="C:\Users\rebra\Desktop\FOODELIVERY\R.jpg" height="400px" width="400px"/>
-    <P>QYFTE</P>
-    <img src="C:\Users\rebra\Desktop\FOODELIVERY\rr.jpg" height="400px" width="400px"/>
-    <P>SUPE</P>
-    <img src="C:\Users\rebra\Desktop\FOODELIVERY\oip.jpg" height="400px" width="400px"/>
-    <P>Dyner</P>
-    <img src="C:\Users\rebra\Desktop\FOODELIVERY\3jpg.jpg" height="400px" width="400px"/>
-    <P>PESHK SOMUN</P>
-    <img src="C:\Users\rebra\Desktop\FOODELIVERY\4jpg.jpg" height="400px" width="400px"/>
-    <P>KOMBIMIN FRUTA TE TERURA </P>
-    <img src="C:\Users\rebra\Desktop\FOODELIVERY\5jpg.jpg" height="400px" width="400px"/>
-    <P>PIDE</P>
-    <img src="C:\Users\rebra\Desktop\FOODELIVERY\6jpg.jpg" height="400px" width="400px"/>
-    <P>LAHMAXHUN</P>
-    <img src="C:\Users\rebra\Desktop\FOODELIVERY\7jpg.jpg" height="400px" width="400px"/>
-    <P>ADANA KEBAP</P>
-    <img src="C:\Users\rebra\Desktop\FOODELIVERY\8jpg.jpg" height="400px" width="400px"/>
-    <P>KUNEFE</P>
-    <img src="C:\Users\rebra\Desktop\FOODELIVERY\9jpg.jpg" height="400px" width="400px"/>
-    <P>TULLUMBA</P>
-    <img src="C:\Users\rebra\Desktop\FOODELIVERY\10jpg.jpg" height="400px" width="400px"/>
-    <P>EMBELSIRA</P>
-    <img src="C:\Users\rebra\Desktop\FOODELIVERY\11jpg.jpg" height="400px" width="400px"/>
-    <P>LLOKUMA</P>
-    <img src="C:\Users\rebra\Desktop\FOODELIVERY\12jpg.jpg" height="400px" width="400px"/>
-    <P>QEBAPA TRADICIONALE</P>
-    <img src="C:\Users\rebra\Desktop\FOODELIVERY\13jpg.jpg" height="400px" width="400px"/>
-    <P>PITE ME SPINAQ</P>
-    <img src="C:\Users\rebra\Desktop\FOODELIVERY\trileqe.jpg" height="400px" width="400px"/>
-    <P>TRILEQE</P>
-    <img src="C:\Users\rebra\Desktop\FOODELIVERY\fli.jpg" height="400px" width="400px"/>
-    <P>FLI</P>
+</head>
+<body>
+    <div class="hajmpim"> 
+        <a href="HOMEPAGE.HTML"><img src="hajmpimlogo.png" class="llogo" width="400" height="100"></a>
+            <a href="loginform.html"><img src="login.png" width="200" height="100"></a>
+    </div>   
+        </div>
+    <div class="container">
+        <a href="Restaurantet.html"> <div class="flexbox-item" id="Restaurantet">Restaurantet</div></a>
+        <a href="Delivery.html"><div class="flexbox-item" id="Delivery">Dergesa</div></a>
+        <a href="preferuara.html"><div class="flexbox-item" id="preferuara">Ushqimet te preferuara</div></a>     
     </div>
-    <footer> <H1>Kompania jone eshte HAJMPIM! </H1>
+    </div> 
+    
+    <div class="ushqimet">
+        <div class="item">
+    <img src="C:\Users\rebra\Desktop\FOODELIVERY\hamburger.jpg">
+    <span class="caption">Hamburger</span>
+        </div>
+    <div class="item">
+    <img src="C:\Users\rebra\Desktop\FOODELIVERY\pizza.jpg">
+    <span class="caption">Pica</span>
+        </div>
+        <div class="item">
+    <img src="C:\Users\rebra\Desktop\FOODELIVERY\pasta.jpg">
+    <span class="caption">Pasta</span>
+        </div>
+        <div class="item">
+    <img src="C:\Users\rebra\Desktop\FOODELIVERY\R.jpg">
+    <span class="caption">Qyfte</span>
+        </div>
+        <div class="item">
+    <img src="C:\Users\rebra\Desktop\FOODELIVERY\rr.jpg">
+    <span class="caption">Supe</span>
+        </div>
+        <div class="item">
+    <img src="C:\Users\rebra\Desktop\FOODELIVERY\oip.jpg">
+    <span class="caption">Dyner</span>
+        </div>
+        <div class="item">
+    <img src="C:\Users\rebra\Desktop\FOODELIVERY\3jpg.jpg">
+    <span class="caption">Peshk Somun</span>
+        </div>
+        <div class="item">
+    <img src="C:\Users\rebra\Desktop\FOODELIVERY\4jpg.jpg">
+    <span class="caption">Kombinim fruta te terura</span>
+        </div>
+        <div class="item">
+    <img src="C:\Users\rebra\Desktop\FOODELIVERY\5jpg.jpg">
+    <span class="caption">Pide</span>
+        </div>
+        <div class="item">
+    <img src="C:\Users\rebra\Desktop\FOODELIVERY\6jpg.jpg">
+    <span class="caption">Lahmaxhun</span>
+        </div>
+        <div class="item">
+    <img src="C:\Users\rebra\Desktop\FOODELIVERY\7jpg.jpg">
+    <span class="caption">Adana kebap</span>
+        </div>
+        <div class="item">
+    <img src="C:\Users\rebra\Desktop\FOODELIVERY\8jpg.jpg">
+    <span class="caption">Kunefe</span>
+        </div>
+        <div class="item">
+    <img src="C:\Users\rebra\Desktop\FOODELIVERY\9jpg.jpg">
+    <span class="caption">Tullumba</span>
+        </div>
+        <div class="item">
+    <img src="C:\Users\rebra\Desktop\FOODELIVERY\10jpg.jpg">
+    <span class="caption">Embelsira</span>
+        </div>
+        <div class="item">
+    <img src="C:\Users\rebra\Desktop\FOODELIVERY\11jpg.jpg">
+    <span class="caption">Llokuma</span>
+        </div>
+        <div class="item">
+    <img src="C:\Users\rebra\Desktop\FOODELIVERY\12jpg.jpg">
+    <span class="caption"> Qebapa tradicionale</span>
+        </div>
+        <div class="item">
+    <img src="C:\Users\rebra\Desktop\FOODELIVERY\13jpg.jpg">
+    <span class="caption">Pite me spinaq</span>
+        </div>
+        <div class="item">
+    <img src="C:\Users\rebra\Desktop\FOODELIVERY\trileqe.jpg" >
+    <span class="caption">Trileqe</span>
+        </div>
+        <div class="item">
+    <img src="C:\Users\rebra\Desktop\FOODELIVERY\fli.jpg" >
+    <span class="caption">Fli</span>
+        </div>
+    <div class="item">
+    <img src="C:\Users\rebra\Desktop\FOODELIVERY\1.jpg" >
+    <span class="caption">Kofsh pule</span>
+         </div>
+    <div class="item">
+    <img src="C:\Users\rebra\Desktop\FOODELIVERY\2.jpg" >
+    <span class="caption">Mish bardh ne tave</span>
+         </div>
+    <div class="item">
+    <img src="C:\Users\rebra\Desktop\FOODELIVERY\3.jpg" >
+     <span class="caption">Mengjesi 2persona</span>
+        </div>
+    <div class="item">
+    <img src="C:\Users\rebra\Desktop\FOODELIVERY\4.jpg" >
+    <span class="caption">KFC KOFSHA</span>
+         </div>
+    <div class="item">
+    <img src="C:\Users\rebra\Desktop\FOODELIVERY\5.jpg" >
+    <span class="caption">Mish specialitet</span>
+        </div>
+    <div class="item">
+    <img src="C:\Users\rebra\Desktop\FOODELIVERY\6.jpg" >
+    <span class="caption">Bifter</span>
+         </div>
+    <div class="item">
+    <img src="C:\Users\rebra\Desktop\FOODELIVERY\7.jpg" >
+    <span class="caption">Toma Hawk</span>
+        </div>
+    <div class="item">
+    <img src="C:\Users\rebra\Desktop\FOODELIVERY\8.jpg" >
+     <span class="caption">Biftek Extre</span>
+        </div>
+    <div class="item">
+    <img src="C:\Users\rebra\Desktop\FOODELIVERY\9.jpg" >
+    <span class="caption">Aperatif</span>
+        </div>
+    <div class="item">
+    <img src="C:\Users\rebra\Desktop\FOODELIVERY\11.jpg" >
+    <span class="caption">Sallad Vegjetariane</span>
+        </div>
+    <div class="item">
+    <img src="C:\Users\rebra\Desktop\FOODELIVERY\12.jpg" >
+         <span class="caption">Gjell me patate</span>
+     </div>
+    <div class="item">
+    <img src="C:\Users\rebra\Desktop\FOODELIVERY\13.jpg" >
+         <span class="caption">Sallad me fruta deti</span>
+     </div>
+    </div>
+    <hr>
+    <footer> <H1>HAJMPIM! </H1>
         <P style="font-size: large;">Ne pjesen e siperme mund ta gjeni ushqimet e preferuara<br>
         Numri kontaktues:+39349658688</P>
 
